@@ -285,9 +285,15 @@ group by DEPARTMENT_Name;
 
 ----- SELF JOIN ---
 -- Display  all employees and their  managers information
+select * from
+             EMPLOYEES w join EMPLOYEES m
+on w.EMPLOYEE_ID=m.MANAGER_ID;
 
 
 -- Given the Employee table, write a SQL query that finds out employees who earn more than their managers.
+select * from EMPLOYEES worker join EMPLOYEES manag
+on worker.MANAGER_ID=manag.EMPLOYEE_ID
+where worker.SALARY>manag.SALARY;
 
 
 -------  SET OPERATORS ---
