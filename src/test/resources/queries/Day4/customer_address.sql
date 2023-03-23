@@ -27,8 +27,6 @@ INSERT INTO customer (customer_id, first_name, last_name,address_id) VALUES (3, 
 INSERT INTO customer (customer_id, first_name, last_name,address_id) VALUES (4, 'Barbara' ,  'Jones' , 8);
 INSERT INTO customer (customer_id, first_name, last_name,address_id) VALUES (5,  'Elizabeth' ,  'Brown' ,  NULL);
 INSERT INTO customer (customer_id, first_name, last_name,address_id) VALUES (6,  'Harold' ,  'Finch' ,  9);
-
-
 select * from customer;
 
 

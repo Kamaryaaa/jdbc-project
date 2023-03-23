@@ -29,3 +29,11 @@ order by COUNTRY_ID;
 --Task2: Display all employees salary in following format as column name Employee_salary
 select FIRST_NAME||' makes '|| SALARY as "Employee_salary"
 from EMPLOYEES;
+select * from EMPLOYEES
+where SALARY=(Select Max(salary) from EMPLOYEES);
+
+select FIRST_NAME from EMPLOYEES
+where length(FIRST_NAME)=6;
+
+select FIRST_NAME from EMPLOYEES
+where FIRST_NAME like '______';

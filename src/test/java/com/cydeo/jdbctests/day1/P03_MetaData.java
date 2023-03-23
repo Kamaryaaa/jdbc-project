@@ -8,7 +8,7 @@ public class P03_MetaData {
 
     //CONNECTION STRING
     String dbUrl = "jdbc:oracle:thin:@54.160.111.35:1521:XE";
-    String dbUsername ="hr";
+    String dbUsername = "hr";
     String dbPassword = "hr";
 
     @Test
@@ -29,7 +29,7 @@ public class P03_MetaData {
         ResultSetMetaData rsmd = rs.getMetaData();
 
 
-        int columnCount=rsmd.getColumnCount();
+        int columnCount = rsmd.getColumnCount();
         System.out.println(columnCount);
 
         //geting column name for index 4
@@ -54,10 +54,11 @@ public class P03_MetaData {
         //EMPLOYEE_ID - 100
         //FIRST_NAME - Steven
  */
-        while(rs.next()) {
+        while (rs.next()) {
             for (int i = 1; i <= columnCount; i++) {
-                System.out.println(rsmd.getColumnName(i) + "-" + rs.getString(i) + " ");
+                System.out.print(rsmd.getColumnName(i) + "-" + rs.getString(i) + " ");
             }
+            System.out.println();
         }
 
 
@@ -66,8 +67,6 @@ public class P03_MetaData {
         statement.close();
         conn.close();
     }
-
-
-
-
 }
+
+

@@ -23,6 +23,8 @@ insert into testers values (1, 'Steven', 110000);
 insert into testers values(2, 'Adam', 105000);
 insert into testers values (3, 'Lex', 100000);
 
+
+
 commit work;
 
 select * from DEVELOPERS

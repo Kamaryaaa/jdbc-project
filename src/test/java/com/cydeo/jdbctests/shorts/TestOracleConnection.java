@@ -1,4 +1,4 @@
-package com.cydeo.jdbctests;
+package com.cydeo.jdbctests.shorts;
 
 import javax.xml.transform.Result;
 import java.sql.*;
